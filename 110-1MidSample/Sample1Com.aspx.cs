@@ -8,6 +8,48 @@ using System.Web.UI.WebControls;
 namespace _110_1MidSample {
     public partial class Sample1Com : System.Web.UI.Page {
         protected void Page_Load(object sender, EventArgs e) {
+            if(IsPostBack == false)
+            {
+                lb_Msg.Text += Request.Form.Get("tb_CellPhone") + "<br />";
+                lb_Msg.Text += Request.Form.Get("tb_ps") + "<br />";
+
+                if (Request.Form.Get("rb_Gender") == "男")
+                {
+                    lb_Msg.Text = lb_Msg.Text + "男" + "<br />";
+                }
+
+                if (Request.Form.Get("rb_Gender") == "女")
+                {
+                    lb_Msg.Text = lb_Msg.Text + "女" + "<br />";
+                }
+                if (Request.Form.Get("rb_Gender") == "其他")
+                {
+                    lb_Msg.Text = lb_Msg.Text + "其他" + "<br />";
+                }
+
+                lb_Msg.Text += Request.Form.Get("tb_Num") + "<br />";
+                lb_Msg.Text += Request.Form.Get("hd_Num") + "<br />";
+
+                lb_Msg.Text += mt_2MD5(Request.Form.Get("tb_Num"));
+
+
+
+
+
+
+
+
+
+            }
+
+           
+
+
+
+
+
+
+
 
         }
 
