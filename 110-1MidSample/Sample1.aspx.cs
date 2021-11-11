@@ -80,5 +80,10 @@ namespace _110_1MidSample {
         {
 
         }
+
+        protected void tb_Images_Click(object sender, ImageClickEventArgs e)
+        {
+            tb_ps.Text = " ";
+        }
     }
 }
