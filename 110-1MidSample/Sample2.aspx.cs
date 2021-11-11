@@ -29,12 +29,12 @@ namespace _110_1MidSample {
             return s_Res;
         }
 
-        public void mt_Control(bool ans = false)
+        public void mt_Control(bool ans = false)  //新增下拉式選單 副程式
         {
             if(ans == true)
             {
                 ddl_ZoneCode.Items.Clear();
-                if(ddl_Type.SelectedValue == "手機")
+                if(ddl_Type.SelectedValue == "手機")  //先處理1,2選單
                 {
                     ListItem o_I = new ListItem("0911", "0911");
                     ddl_ZoneCode.Items.Add(o_I);
@@ -57,7 +57,7 @@ namespace _110_1MidSample {
             }
             ddl_City.Items.Clear();
 
-            switch (ddl_ZoneCode.SelectedValue)
+            switch (ddl_ZoneCode.SelectedValue)  //再來處理2,3選單
             {
                 case "0911":
                 case "0921":
@@ -99,13 +99,9 @@ namespace _110_1MidSample {
 
             
 
-
-
-
-
         }
 
-        protected void ddl_Type_SelectedIndexChanged(object sender, EventArgs e)
+        protected void ddl_Type_SelectedIndexChanged(object sender, EventArgs e)  
         {
             mt_Control(true);
         }
@@ -115,7 +111,7 @@ namespace _110_1MidSample {
             mt_Control();
         }
 
-        protected void rb_Des_SelectedIndexChanged(object sender, EventArgs e)
+        protected void rb_Des_SelectedIndexChanged(object sender, EventArgs e) //顯示資料方框
         {
             if(rb_Des.SelectedValue == "是")
             {
@@ -127,7 +123,7 @@ namespace _110_1MidSample {
             }
         }
 
-        protected void btn_Submit_Click(object sender, EventArgs e)
+        protected void btn_Submit_Click(object sender, EventArgs e) //顯示結果至lb_Id
         {
 
                 lb_Msg.Text += lb_Id.Text + "<br/>";
