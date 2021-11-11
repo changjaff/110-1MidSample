@@ -59,7 +59,7 @@ namespace _110_1MidSample {
 
             switch (ddl_ZoneCode.SelectedValue)  //再來處理2,3選單
             {
-                case "0911":
+                case "0911":  //一併處理0911,0921,0960
                 case "0921":
                 case "0960":
                     ListItem o_I = new ListItem("台北市", "台北市");
@@ -74,21 +74,24 @@ namespace _110_1MidSample {
                     ddl_City.Items.Add(o_I);
                     o_I = new ListItem("高雄縣", "高雄縣");
                     ddl_City.Items.Add(o_I);
-
                     break;
-                case "02":
+
+
+                case "02": //如果選擇02
                     ListItem o_I2 = new ListItem("台北市", "台北市");
                     ddl_City.Items.Add(o_I2);
                     o_I = new ListItem("新北市", "新北市");
                     ddl_City.Items.Add(o_I);
                     break;
-                case "04":
+
+                case "04"://如果選擇04
                     ListItem o_I3 = new ListItem("台中市", "台中市");
                     ddl_City.Items.Add(o_I3);
                     o_I = new ListItem("台中縣", "台中縣");
                     ddl_City.Items.Add(o_I);
                     break;
-                case "07":
+
+                case "07": //如果選擇07
                     ListItem o_I4 = new ListItem("高雄市", "高雄市");
                     ddl_City.Items.Add(o_I4);
                     o_I = new ListItem("高雄縣", "高雄縣");
