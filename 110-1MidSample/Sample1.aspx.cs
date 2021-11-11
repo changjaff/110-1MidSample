@@ -8,14 +8,13 @@ using System.Web.UI.WebControls;
 namespace _110_1MidSample {
     public partial class Sample1 : System.Web.UI.Page {
         protected void Page_Load(object sender, EventArgs e) {
-            if(IsPostBack == false)
+            if(IsPostBack == false)  
             {
                 string s_Ver = mt_GenVeriStr();
                 mt_ImgPointer(ref Image1, s_Ver);
                 hd_Num.Value = mt_2MD5(s_Ver);
             }
            
-
 
 
         }
@@ -76,10 +75,7 @@ namespace _110_1MidSample {
             return s_Md5;
         }
 
-        protected void btn_Submit_Click(object sender, EventArgs e)
-        {
-
-        }
+     
 
         protected void tb_Images_Click(object sender, ImageClickEventArgs e)
         {

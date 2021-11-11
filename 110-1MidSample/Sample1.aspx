@@ -30,7 +30,7 @@
         <asp:TextBox ID="tb_Num" runat="server" Height="15px" Width="50px"></asp:TextBox>
         <asp:Image ID="Image1" runat="server" /><br />
 
-        <asp:Button ID="btn_Submit" runat="server" Text="送出" Height="30px" Width="80px" PostBackUrl="~/Sample1Com.aspx" OnClick="btn_Submit_Click"/>
+        <asp:Button ID="btn_Submit" runat="server" Text="送出" Height="30px" Width="80px" PostBackUrl="~/Sample1Com.aspx"/>
 
 
         <asp:HiddenField ID="hd_Num" runat="server" />
