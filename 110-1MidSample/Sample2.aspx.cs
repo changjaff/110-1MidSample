@@ -12,7 +12,7 @@ namespace _110_1MidSample {
             if(IsPostBack == false)
             {
                 mt_Control(true);
-                string s_Ver = mt_GenVeriStr();
+                string s_Ver = mt_GenVeriStr(); //產生亂數4位數
                 lb_Id.Text = s_Ver;
             }
 
