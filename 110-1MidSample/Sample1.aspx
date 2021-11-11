@@ -16,15 +16,15 @@
         <asp:TextBox ID="tb_ps" runat="server" TextMode="Password" Height="15px" Width="200px"></asp:TextBox>
         <asp:ImageButton ID="tb_Images" runat="server" ImageUrl="~/eye-slash-solid.svg" Height="30px" Width="30px"  OnClick="tb_Images_Click"/><br />
         <asp:Label ID="Label3" runat="server" Text="生理性別" Font-Size="X-Large"></asp:Label>
+
         <asp:RadioButtonList ID="rb_Gender" runat="server" RepeatDirection="Horizontal" RepeatLayout="Flow">
             <asp:ListItem>男</asp:ListItem>
             <asp:ListItem>女</asp:ListItem>
             <asp:ListItem>其他</asp:ListItem>
         </asp:RadioButtonList><br />
+
         <asp:Label ID="Label4" runat="server" Text="影片說明" Font-Size="X-Large"></asp:Label>
         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="https://www.youtube.com/" Height="30px" Width="30px" ImageUrl="~/youtube-brands.svg">HyperLink</asp:HyperLink><br />
-
-
 
         <asp:Label ID="Label5" runat="server" Text="認證碼" Font-Size="X-Large"></asp:Label>
         <asp:TextBox ID="tb_Num" runat="server" Height="15px" Width="50px"></asp:TextBox>
