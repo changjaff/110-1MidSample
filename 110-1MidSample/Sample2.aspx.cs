@@ -33,8 +33,8 @@ namespace _110_1MidSample {
         {
             if(ans == true)
             {
-                ddl_ZoneCode.Items.Clear();
-                if(ddl_Type.SelectedValue == "手機")  //先處理1,2選單
+                ddl_ZoneCode.Items.Clear(); //清除第二選單資料
+                if (ddl_Type.SelectedValue == "手機")  //先處理1,2選單
                 {
                     ListItem o_I = new ListItem("0911", "0911");
                     ddl_ZoneCode.Items.Add(o_I);
@@ -55,7 +55,7 @@ namespace _110_1MidSample {
                 }
 
             }
-            ddl_City.Items.Clear();
+            ddl_City.Items.Clear();  //清除第三選單資料
 
             switch (ddl_ZoneCode.SelectedValue)  //再來處理2,3選單
             {
